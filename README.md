@@ -13,6 +13,8 @@ yarn add react-native-controlled-input
 
 ### 2)
 Apply this fix in `Libraries/Text/TextInput/RCTBaseTextInputView.m`, line 303
+
+
 [See the diff here](http://res.cloudinary.com/wavy/image/upload/v1534894912/Screen_Shot_2018-08-22_at_01.39.51.png)
 
 
