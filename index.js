@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
-import { TextInput } from 'react-native';
+import { TextInput, Platform } from 'react-native';
 
-export default class ControlledInput extends PureComponent {
+export class ControlledInput extends PureComponent {
   constructor(props) {
     super(props);
     if (props.onChange) {
@@ -122,3 +122,5 @@ export default class ControlledInput extends PureComponent {
     );
   }
 }
+
+export default Platform.OS === 'ios' ? ControlledInput : TextInput;
