@@ -5,6 +5,13 @@ Fix controlled input on react-native IOS, broken since version 0.53
 
 [RN issue #18874](https://github.com/facebook/react-native/issues/18874)
 
+
+@rplankenhorn solution breaks onChange/onChangeText, but allow full controlled input (using onKeyPress)    
+I started of @rplankenhorn solution, and then forwarded a "controlled" flag to RCTBaseTextInputView  
+which only block textInputShouldChangeTextInRange on controlled input.  
+I then created a <ControlledTextInput/> module which recreate onChangeText behavior using onKeyPress and onSelectionChange  
+
+
 # Installation
 ### 1)
 ```
