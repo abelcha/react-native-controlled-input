@@ -1,5 +1,11 @@
-# react-native-controlled-input
+# ⚠️DEPRECIATED
 
+
+### This issue has been fixed in v0.57.1 [(with this commit)](https://github.com/facebook/react-native/commit/2307ea60d03edd234511bfe32474c453f30c1693)
+
+
+
+# react-native-controlled-input
 Fix controlled input on react-native IOS, broken since version 0.53
 
 
